@@ -90,7 +90,6 @@ this [Metadata Query API][e_mdq_api], as well as released some brand new
 [e_mdq_api]: e://post_metadata_queries_execute_read
 [g_mdq_api]: g://metadata/queries
 [qs_mdq_api]: g://metadata/quick-start
->>>>>>> 3b75059ca44fc74e70d27f527a9f06b1cf780601
 
 ## 2020-03-30 / Potential impactful changes to format of Metadata `date` fields
 
