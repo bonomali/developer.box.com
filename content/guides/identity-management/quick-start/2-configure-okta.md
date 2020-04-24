@@ -57,21 +57,7 @@ change.
 
 Fill out the application details with the following configuration settings:
 
-<Grid columns='3'>
-  <Choose option='programming.platform' value='node' color='blue'>
-    # Node/Express
-  </Choose>
-
-  <Choose option='programming.platform' value='java' color='white'>
-    # Java/Spring Boot
-  </Choose>
-  
-  <Choose option='programming.platform' value='python' color='blue'>
-    # Python/Flask
-  </Choose>
-</Grid>
-
-<Choice option='programming.platform' value='node' color='blue'>
+<Choice option='programming.platform' value='node' color='none'>
 
 * Name: Any
 * Base URIs: `http://localhost:3000/`
@@ -151,7 +137,7 @@ appropriate configuration files.
   ![Okta Org URL](./img/okta-qs-step2-org-url.png)
 </ImageFrame>
 
-<Choice option='programming.platform' value='node' color='blue'>
+<Choice option='programming.platform' value='node' color='none'>
 
 * Open `config.json` within the local application directory in your preferred
  editor.

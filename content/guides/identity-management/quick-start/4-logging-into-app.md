@@ -21,7 +21,7 @@ This section will walk you through:
 
 ## Set up the Skeleton
 
-<Choice option='programming.platform' value='node' color='blue'>
+<Choice option='programming.platform' value='node' color='none'>
 
 In your local application directory, load the `server.js` file created in
 step 1.
@@ -314,7 +314,7 @@ routing method.
 We now need to define the code that will run when our main route (`/`) is
 engaged.
 
-<Choice option='programming.platform' value='node' color='blue'>
+<Choice option='programming.platform' value='node' color='none'>
 
 Replace `// TODO: HANDLE ROUTE` in the main route with the following code.
 
