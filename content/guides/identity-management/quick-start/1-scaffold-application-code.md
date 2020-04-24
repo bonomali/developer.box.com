@@ -38,31 +38,30 @@ Choose your preferred language / framework below to get started.
 </Grid>
 
 <Choice option='programming.platform' value='node' color='none'>
-
 * Create a local directory for your application.
 * Create a `package.json` file inside the local directory, open it in your
  preferred editor, copy / paste the following into it, and save / exit the
  file.
 
 ```js
-  {
-    "name": "okta-box",
-    "version": "1.0.0",
-    "description": "Box / Okta sample integration",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js"
-    },
-    "author": "Box",
-    "license": "ISC",
-    "dependencies": {
-      "@okta/oidc-middleware": "^4.0.0",
-      "@okta/okta-sdk-nodejs": "^3.2.0",
-      "box-node-sdk": "^1.31.0",
-      "express-session": "^1.17.0"
-    }
+{
+  "name": "okta-box",
+  "version": "1.0.0",
+  "description": "Box / Okta sample integration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Box",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/oidc-middleware": "^4.0.0",
+    "@okta/okta-sdk-nodejs": "^3.2.0",
+    "box-node-sdk": "^1.31.0",
+    "express-session": "^1.17.0"
   }
+}
 ```
 
 * Run `npm init` from the terminal / console to install dependencies.
@@ -200,7 +199,7 @@ Add the following line to the **top** of the `Configure` method.
 </Choice>
 <Choice option='programming.platform' unset color='none'>
   <Message danger>
-    # Incomplete previous step
+    # Incomplete step
     Please select a preferred language / framework to get started.
   </Message>
 </Choice>
