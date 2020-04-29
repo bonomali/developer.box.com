@@ -235,7 +235,7 @@ In your local application, load `Views` > `Shared` > `Layout.cshtml`. Once the
 ASP.NET application loads this will be the visual component that is rendered.
 At the top of the page, insert the following.
 
-```cs
+```dotnet
 @using System.Security.Claims;
 
 @if (User.Identity.IsAuthenticated)
@@ -261,7 +261,7 @@ This will be the controller that is enacted when that sign in link is clicked.
 
 Copy the following basic application structure into the file.
 
-```cs
+```dotnet
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -325,7 +325,7 @@ Replace `// TODO: HANDLE ROUTE` in the main route with the following code.
 
     // If Okta ID is present, pass to Box user validation
     if (userInfo.sub) {
-      box.validateUser(userInfo);
+      box.validateUser(userInfo, res);
     } else {
       console.log('No Okta ID identified');
     }
@@ -340,8 +340,9 @@ connector will make the Okta user and configuration information available to
 our route within `req.userContext`. 
 
 If user information is present, meaning the user is logged in to Okta, we pass
-the user information to `box.validateUser` to see if there is an associated Box
-user available, which we'll define in the next step.
+the user information to `box.validateUser` along with the Express response
+object to see if there is an associated Box user available, which we'll define
+in the next step.
 
 If no user information is present, we redirect the user to `/login`. The OIDC
 connector will automatically handle this route and force the user through to
@@ -405,7 +406,7 @@ the next step.
 <Choice option='programming.platform' value='cs' color='none'>
 Replace `// TODO: HANDLE ROUTE` in the main route with the following code.
 
-```cs
+```dotnet
   var subClaim = HttpContext.User.Claims.First(c => c.Type == "sub");
   var sub = subClaim.Value;
 
