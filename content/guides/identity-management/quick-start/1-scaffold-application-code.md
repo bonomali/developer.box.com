@@ -17,24 +17,20 @@ Choose your preferred language / framework below to get started.
 
 <Grid columns='2'>
   <Choose option='programming.platform' value='node' color='blue'>
-    # Node
-    Using the Express.js framework.
+    # Node/Express.js
   </Choose>
 
   <Choose option='programming.platform' value='java' color='blue'>
-    # Java
-    Using the Spring Boot framework.
+    # Java/Spring Boot
   </Choose>
 </Grid>
 <Grid columns='2'>
   <Choose option='programming.platform' value='python' color='blue'>
-    # Python
-    Using the Flask framework.
+    # Python/Flask
   </Choose>
   
   <Choose option='programming.platform' value='cs' color='blue'>
-    # .NET
-    Using the ASP.NET Core framework.
+    # C#/ASP.NET
   </Choose>
 </Grid>
 
